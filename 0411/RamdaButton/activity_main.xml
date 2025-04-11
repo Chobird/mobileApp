@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <ImageView
+        android:id="@+id/clothingImageView"
+        android:layout_width="300dp"
+        android:layout_height="400dp"
+        android:layout_gravity="center"
+        android:background="@android:color/white"
+        android:src="@drawable/img_boy"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="16dp">
+
+        <Button
+            android:id="@+id/colorButton1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Color 1" />
+
+        <Button
+            android:id="@+id/colorButton2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Color 2" />
+
+        <Button
+            android:id="@+id/colorButton3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Color 3" />
+
+        <Button
+            android:id="@+id/colorButton4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Color 4" />
+
+    </LinearLayout>
+
+</LinearLayout>
