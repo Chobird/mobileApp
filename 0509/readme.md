@@ -1,9 +1,5 @@
 # Paint Board
 
-**폴더 경로:**
-```
-C:\Users\aksql\AndroidStudioProjects\TEST03\app\src\paint_board
-```
 
 ## SWOT 분석
 
