@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#CCCCCC">
+
+    <LinearLayout
+        android:id="@+id/paint_controls"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_color_black"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:backgroundTint="#000000"
+            android:tag="#FF000000"
+            android:text="검정" />
+        <Button
+            android:id="@+id/btn_color_red"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:backgroundTint="#FF0000"
+            android:tag="#FFFF0000"
+            android:text="빨강" />
+        <Button
+            android:id="@+id/btn_color_green"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:backgroundTint="#00FF00"
+            android:tag="#FF00FF00"
+            android:text="초록" />
+        <Button
+            android:id="@+id/btn_color_blue"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:backgroundTint="#0000FF"
+            android:tag="#FF0000FF"
+            android:text="파랑" />
+        <Button
+            android:id="@+id/btn_color_yellow"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:backgroundTint="#FFFF00"
+            android:tag="#FFFFFF00"
+            android:text="노랑" />
+        <ImageButton
+            android:id="@+id/btn_clear"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:src="@android:drawable/ic_menu_delete"
+            android:contentDescription="지우기"
+            android:background="@android:color/transparent" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <ImageButton
+            android:id="@+id/btn_stroke_small"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:src="@android:drawable/ic_menu_edit"
+            android:contentDescription="얇게"
+            android:tag="5"
+            android:background="@android:color/transparent" />
+        <ImageButton
+            android:id="@+id/btn_stroke_medium"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:src="@android:drawable/ic_menu_edit"
+            android:contentDescription="중간"
+            android:tag="10"
+            android:background="@android:color/transparent" />
+        <ImageButton
+            android:id="@+id/btn_stroke_large"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:src="@android:drawable/ic_menu_edit"
+            android:contentDescription="굵게"
+            android:tag="20"
+            android:background="@android:color/transparent" />
+    </LinearLayout>
+
+    <com.example.test03.SingleTouchView
+        android:id="@+id/drawing_view"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#FFFFFF" />
+
+</LinearLayout>
